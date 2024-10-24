@@ -1,0 +1,20 @@
+<p>login Form</p>
+<form [formGroup]="myform" (ngSubmit)="onSubmit()">
+    <!-- <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+    </div> -->
+    <div class="mb-3">
+      <label for="exampleInputUsername" class="form-label">Username</label>
+      <input type="text" class="form-control" id="exampleInputUsername" formControlName="username" aria-describedby="nameHelp">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" formControlName="password" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
